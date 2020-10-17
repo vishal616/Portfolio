@@ -1,0 +1,33 @@
+.WIP {
+
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 150px;
+    margin-bottom: 10px;
+    font-size: 44px;
+    font-weight: bold;
+    color:black;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow:
+      0 1.1px 7.8px rgba(0, 0, 0, 0.094),
+      0 2.3px 17.2px rgba(0, 0, 0, 0.101),
+      0 3.9px 28.8px rgba(0, 0, 0, 0.102),
+      0 5.9px 43.4px rgba(0, 0, 0, 0.1),
+      0 8.5px 62.6px rgba(0, 0, 0, 0.096),
+      0 12.1px 88.6px rgba(0, 0, 0, 0.092),
+      0 17.1px 125.7px rgba(0, 0, 0, 0.087),
+      0 24.8px 182.5px rgba(0, 0, 0, 0.081),
+      0 38.3px 281.3px rgba(0, 0, 0, 0.076),
+      0 68px 500px rgba(0, 0, 0, 0.07);
+    @media only screen and (max-width: 600px) {
+        padding: 50px;
+        font-size: 22px;
+    }
+  }
+}
