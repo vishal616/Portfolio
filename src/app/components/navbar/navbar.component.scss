@@ -1,0 +1,26 @@
+.navbar-container {
+	.ml-lg-10 {
+		margin-left: 0;
+		@media (min-width: 576px) {
+			margin-left: 6rem
+		}
+	}
+
+	.empty-container {
+		margin-right: -5rem;
+	}
+
+	img {
+		height: 40px;
+		width: 40px;
+	}
+
+	ul {
+		margin-top: 10px;
+	}
+
+	a {
+		font-size: 14px;
+		color: white;
+	}
+}
