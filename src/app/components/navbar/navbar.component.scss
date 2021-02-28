@@ -26,10 +26,49 @@
 
 	ul {
 		margin-top: 10px;
+		//@media (max-width: 576px) {
+		//	margin-top: 4rem;
+		//}
 	}
 
 	a {
 		font-size: 14px;
 		color: white;
+	}
+
+	@media (max-width: 576px) {
+		.navbar-collapse {
+			position: fixed;
+			top: 0;
+			right: 0;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 15px;
+			width: 50%;
+			height: 100%;
+			background-color: white;
+
+			a {
+				color: black;
+			}
+		}
+
+		.navbar-collapse.collapsing {
+			right: -75%;
+			transition: height 0s ease;
+		}
+
+		.navbar-collapse.show {
+			right: 0;
+			transition: right 300ms ease-in-out;
+		}
+
+		.navbar-toggler.collapsed ~ .navbar-collapse {
+			transition: right 500ms ease-in-out;
+		}
+
+		ul {
+			margin-top: 4rem;
+		}
 	}
 }
