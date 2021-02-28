@@ -1,4 +1,9 @@
 .navbar-container {
+
+	.navbar-inner {
+		background:transparent;
+	}
+
 	.ml-lg-10 {
 		margin-left: 0;
 		@media (min-width: 576px) {
