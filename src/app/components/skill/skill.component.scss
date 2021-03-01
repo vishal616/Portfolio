@@ -1,0 +1,44 @@
+.skill-container {
+	position: relative;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	.hr-overlay {
+		background: #96BB7C;
+		position: absolute;
+		top: 27px;
+		width: 70%;
+	}
+
+	.number-card {
+		position: absolute;
+		top: 30px;
+
+		.icon {
+			position: relative;
+
+			span {
+				position: absolute;
+				left: 9px;
+				top: 9.2px;
+				color: black;
+				font-size: 11px;
+			}
+		}
+
+		img {
+			height: 25px;
+			width: 40px;
+		}
+	}
+
+	hr {
+		background: #E9ECEF;
+		padding: 2px;
+		border-radius: 100px;
+		margin-top: 0px;
+	}
+	h6 {
+		color: black;
+		//font-weight: 500;
+	}
+}

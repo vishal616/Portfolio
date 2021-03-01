@@ -1,0 +1,11 @@
+<div class="skill-container">
+	<h6>{{skillName}}</h6>
+	<hr/>
+	<hr [ngStyle]="{'width': skillLevel + '%'}" class="hr-overlay"/>
+	<div [ngStyle]="{'left': skillLevel-4 + '%'}" class="number-card">
+		<div class="icon">
+			<img src="../../../assets/message-icon.svg"/>
+			<span>{{skillLevel + '%'}}</span>
+		</div>
+	</div>
+</div>

@@ -1,7 +1,7 @@
 <div class="about-container row">
 	<div class="dots"></div>
-	<div class="img col-lg-6">
-		<img class="img-fluid" src="../../../assets/about-picture.jpg"/>
+	<div class="col-lg-6">
+		<img class="img" src="../../../assets/about-picture.jpg"/>
 	</div>
 	<div class="bio col-lg-6">
 		<h1>My Bio</h1>
@@ -18,6 +18,18 @@
 			texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
 			ocean.
 		</p>
-
+		<div class="skill-list">
+			<div *ngFor="let skill of skillsList">
+				<app-skill
+					[skillName]="skill.name"
+					[skillLevel]="skill.level"
+				></app-skill>
+			</div>
+		</div>
+		<div class="resume">
+			<a class="btn btn-primary">HIRE ME</a>
+			<a class="btn btn-secondary" href="../../../assets/resume.pdf" target="_blank">DOWNLOAD CV</a>
+		</div>
 	</div>
+
 </div>

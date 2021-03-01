@@ -3,12 +3,12 @@
 	padding-left: 10rem;
 	padding-right: 10rem;
 	.img {
-		width: 50%;
+		width: 100%;
 		height: 100%
 	}
 	.dots {
 		z-index: -1;
-		top: 43rem;
+		top: 46rem;
 		left: 26rem;
 		-webkit-transform: translate(40%,-20%);
 		-ms-transform: translate(40%,-20%);
@@ -22,6 +22,46 @@
 
 	.bio {
 		padding: 80px;
+
+		.skill-list {
+			margin-top: 50px;
+		}
+
+		.resume {
+			margin-top: 100px;
+
+			.btn {
+				padding-top: 15px;
+				padding-bottom: 15px;
+				padding-left: 30px;
+				padding-right: 30px;
+				border-radius: 30px;
+				font-size: 11px;
+				text-transform: uppercase;
+				font-weight: 700;
+				letter-spacing: .05rem;
+				background-color: #96bb7c;
+				border: none;
+				margin-right: 2.5px;
+			}
+
+			.btn.btn-primary:hover {
+				border-color: #a1c289;
+				background: #a1c289;
+			}
+
+			.btn-secondary {
+				color: #fff;
+				background-color: #6c757d;
+				border-color: #6c757d;
+			}
+
+			.btn-secondary:hover {
+				color: #fff;
+				background-color: #5a6268;
+				border-color: #545b62;
+			}
+		}
 	}
 
 	h1 {
