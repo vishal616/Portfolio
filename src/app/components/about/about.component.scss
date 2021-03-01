@@ -7,17 +7,22 @@
 		height: 100%
 	}
 	.dots {
-		z-index: -1;
-		top: 46rem;
-		left: 24rem;
-		-webkit-transform: translate(40%,-20%);
-		-ms-transform: translate(40%,-20%);
-		transform: translate(40%,-20%);
-		position: absolute;
-		content: "";
-		width: 304px;
-		height: 264px;
-		background: url(../../../assets/dots.svg) right top;
+		display: none;
+		@media (min-width: 990px) {
+			display: block;
+			z-index: -1;
+			-webkit-transform: translate(40%,-20%);
+			-ms-transform: translate(40%,-20%);
+			transform: translate(40%,-20%);
+			top: 130vh;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			position: absolute;
+			content: "";
+			width: 304px;
+			height: 264px;
+			background: url(../../../assets/dots.svg) right top;
+		}
 	}
 
 	.bio {

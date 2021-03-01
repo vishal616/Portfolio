@@ -10,7 +10,7 @@
 
 	.ml-lg-10 {
 		margin-left: 0;
-		@media (min-width: 576px) {
+		@media (min-width: 990px) {
 			margin-left: 6rem
 		}
 	}
@@ -36,7 +36,7 @@
 		color: white;
 	}
 
-	@media (max-width: 576px) {
+	@media (max-width: 990px) {
 		.navbar-collapse {
 			position: fixed;
 			top: 0;
