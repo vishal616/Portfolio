@@ -7,7 +7,7 @@ import {Component, HostListener, Input, OnInit, ViewChild} from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-	@Input() isMenuCollapsed = true;
+	isMenuCollapsed = true;
 
 	constructor() {
 	}

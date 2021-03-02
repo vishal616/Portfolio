@@ -1,4 +1,4 @@
-@import "src/styles";
+@import "src/styles/main";
 
 .WIP {
 
@@ -35,6 +35,7 @@
 }
 
 .home {
+	overflow-x: hidden;
 	.navbar-aligment {
 		position: absolute;
 		width: 100%;

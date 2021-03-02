@@ -1,0 +1,21 @@
+@mixin for-screen($device) {
+	@if $device == mobile {
+		@media (max-width: 767px) { @content; }
+	}
+
+	@else if $device == ipad {
+		@media (min-width: 768px) { @content; }
+	}
+
+	@else if $device == standard {
+		@media (min-width: 992px) { @content; }
+	}
+
+	@else if $device == extra-large {
+		@media (min-width: 1200px) { @content; }
+	}
+
+	@else {
+		@warn "Breakpoint mixin supports: xs, sm, md, lg";
+	}
+}

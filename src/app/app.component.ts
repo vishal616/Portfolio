@@ -6,10 +6,4 @@ import {Component, HostListener, Input} from '@angular/core';
 	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-	@Input() closeNavBar = true;
-
-	@HostListener('click')
-	clicked() {
-		this.closeNavBar = !this.closeNavBar;
-	}
 }
