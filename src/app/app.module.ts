@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { AboutComponent } from './components/about/about.component';
 import { SkillComponent } from './components/skill/skill.component';
+import { ProjectComponent } from './components/project/project.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SkillComponent } from './components/skill/skill.component';
     NavbarComponent,
     LandingComponent,
     AboutComponent,
-    SkillComponent
+    SkillComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
