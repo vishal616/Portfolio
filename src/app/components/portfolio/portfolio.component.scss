@@ -1,7 +1,21 @@
 .portfolio-container {
 
-	.projects {
+	.project-list {
 		padding: 5rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		flex: 1 1 30%;
+
+		@media (max-width: 990px) {
+			padding: 2rem;
+		}
+
+		.project {
+			margin: 20px;
+			height: fit-content;
+		}
 	}
 
 	h1 {

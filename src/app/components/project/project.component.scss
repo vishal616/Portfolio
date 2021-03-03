@@ -1,8 +1,10 @@
 .project-container {
 
-	.img-container {
-		height: 100px;
-		width: 100px;
+	max-height: 15rem;
+	max-width: 15rem;
+
+	&:hover {
+		cursor: pointer;
 	}
 
 	h1 {

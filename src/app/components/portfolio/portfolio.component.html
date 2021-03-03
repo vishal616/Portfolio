@@ -1,9 +1,9 @@
 <div class="portfolio-container">
 	<h1>My Portfolio</h1>
-	<div class="projects row">
-		<div class="col-lg-3">
+	<div class="project-list row">
+		<div class="project" *ngFor="let project of projectList">
 			<app-project
-				[project]="project1"
+				[project]="project"
 			></app-project>
 		</div>
 	</div>

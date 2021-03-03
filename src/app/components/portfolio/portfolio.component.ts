@@ -8,16 +8,72 @@ import {Project} from '../project/project.component';
 })
 export class PortfolioComponent implements OnInit {
 
-	project1: Project;
+	projectList: Project[];
 
 	constructor() {
-		this.project1 = {
+		this.projectList = [{
 			name: 'Website',
 			image: '../../../assets/projects/project-1.jpg',
 			type: 'Front-end',
 			briefInfo: 'helps you find stock photos',
 			link: 'https://www.pexels.com/'
-		};
+		},
+			{
+				name: 'Website',
+				image: '../../../assets/projects/project-1.jpg',
+				type: 'Front-end',
+				briefInfo: 'helps you find stock photos',
+				link: 'https://www.pexels.com/'
+			},
+			{
+				name: 'Website',
+				image: '../../../assets/projects/project-1.jpg',
+				type: 'Front-end',
+				briefInfo: 'helps you find stock photos',
+				link: 'https://www.pexels.com/'
+			},
+			{
+				name: 'Website',
+				image: '../../../assets/projects/project-1.jpg',
+				type: 'Front-end',
+				briefInfo: 'helps you find stock photos',
+				link: 'https://www.pexels.com/'
+			},
+			{
+				name: 'Website',
+				image: '../../../assets/projects/project-1.jpg',
+				type: 'Front-end',
+				briefInfo: 'helps you find stock photos',
+				link: 'https://www.pexels.com/'
+			},
+			{
+				name: 'Website',
+				image: '../../../assets/projects/project-1.jpg',
+				type: 'Front-end',
+				briefInfo: 'helps you find stock photos',
+				link: 'https://www.pexels.com/'
+			},
+			{
+				name: 'Website',
+				image: '../../../assets/projects/project-1.jpg',
+				type: 'Front-end',
+				briefInfo: 'helps you find stock photos',
+				link: 'https://www.pexels.com/'
+			},
+			{
+				name: 'Website',
+				image: '../../../assets/projects/project-1.jpg',
+				type: 'Front-end',
+				briefInfo: 'helps you find stock photos',
+				link: 'https://www.pexels.com/'
+			},
+			{
+				name: 'Website',
+				image: '../../../assets/projects/project-1.jpg',
+				type: 'Front-end',
+				briefInfo: 'helps you find stock photos',
+				link: 'https://www.pexels.com/'
+			}];
 	}
 
 	ngOnInit(): void {
