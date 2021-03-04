@@ -1,7 +1,13 @@
 .project-container {
 
-	max-height: 15rem;
-	max-width: 15rem;
+	width: 15rem;
+	height: 15rem;
+	margin: 20px;
+
+	@media (max-width: 550px) {
+		width: 20rem;
+		height: 20rem;
+	}
 
 	&:hover {
 		cursor: pointer;

@@ -1,7 +1,7 @@
 <div class="portfolio-container">
 	<h1>My Portfolio</h1>
-	<div class="project-list row">
-		<div class="project" *ngFor="let project of projectList">
+	<div class="project-list">
+		<div *ngFor="let project of projectList">
 			<app-project
 				[project]="project"
 			></app-project>
