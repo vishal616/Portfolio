@@ -38,41 +38,6 @@ export class PortfolioComponent implements OnInit {
 				type: 'Front-end',
 				briefInfo: 'helps you find stock photos',
 				link: 'https://www.pexels.com/'
-			},
-			{
-				name: 'Website',
-				image: '../../../assets/projects/project-1.jpg',
-				type: 'Front-end',
-				briefInfo: 'helps you find stock photos',
-				link: 'https://www.pexels.com/'
-			},
-			{
-				name: 'Website',
-				image: '../../../assets/projects/project-1.jpg',
-				type: 'Front-end',
-				briefInfo: 'helps you find stock photos',
-				link: 'https://www.pexels.com/'
-			},
-			{
-				name: 'Website',
-				image: '../../../assets/projects/project-1.jpg',
-				type: 'Front-end',
-				briefInfo: 'helps you find stock photos',
-				link: 'https://www.pexels.com/'
-			},
-			{
-				name: 'Website',
-				image: '../../../assets/projects/project-1.jpg',
-				type: 'Front-end',
-				briefInfo: 'helps you find stock photos',
-				link: 'https://www.pexels.com/'
-			},
-			{
-				name: 'Website',
-				image: '../../../assets/projects/project-1.jpg',
-				type: 'Front-end',
-				briefInfo: 'helps you find stock photos',
-				link: 'https://www.pexels.com/'
 			}];
 	}
 
