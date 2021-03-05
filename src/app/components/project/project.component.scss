@@ -3,6 +3,12 @@
 	width: 15rem;
 	height: 15rem;
 	margin: 20px;
+	transition: 0.5s;
+	position: relative;
+
+	.img-overlay {
+		display: none;
+	}
 
 	@media (max-width: 550px) {
 		width: 20rem;
@@ -10,7 +16,20 @@
 	}
 
 	&:hover {
+		transform: scale(1.1);
 		cursor: pointer;
+		.img-overlay {
+			position: absolute;
+			background: black;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			opacity: 0.5;
+			color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 
 	h1 {
@@ -20,5 +39,6 @@
 	img {
 		height: 100%;
 		width: 100%;
+		border-radius: 3px;
 	}
 }
