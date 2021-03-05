@@ -1,4 +1,7 @@
 <div (click)="openProjectModal()" class="project-container">
 	<img [src]="project.image"/>
-	<div class="img-overlay">{{project.name}}</div>
+	<div class="img-overlay">
+		<div>{{project.name}}</div>
+		<div class="type">{{project.type}}</div>
+	</div>
 </div>

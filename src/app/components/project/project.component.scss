@@ -6,6 +6,12 @@
 	transition: 0.5s;
 	position: relative;
 
+	//.type {
+	//	position: absolute;
+	//	color: #96bb7c;
+	//	opacity: 1;
+	//	z-index: 100;
+	//}
 	.img-overlay {
 		display: none;
 	}
@@ -29,6 +35,8 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			font-size: 1.75rem;
+			flex-direction: column;
 		}
 	}
 
