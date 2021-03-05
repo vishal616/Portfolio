@@ -37,4 +37,5 @@ export interface Project {
 	link: string;
 	github?: string;
 	status?: string;
+	techStack?: string[];
 }

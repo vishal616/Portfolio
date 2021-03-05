@@ -18,7 +18,8 @@ export class PortfolioComponent implements OnInit {
 			status: 'Completed',
 			github: 'https://github.com/vishal616',
 			briefInfo: 'helps you find stock photos',
-			link: 'https://www.pexels.com/'
+			link: 'https://www.pexels.com/',
+			techStack: ['Angular', 'Java', 'MongoDb']
 		},
 			{
 				name: 'Website',
