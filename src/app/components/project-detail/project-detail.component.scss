@@ -1,0 +1,74 @@
+.project-detail-modal {
+	position: relative;
+	padding: 2rem;
+
+	.intro {
+
+		.image {
+			height: 15rem;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			li {
+				color: black;
+				font-weight: bold;
+				margin: 10px;
+				font-size: 22px;
+
+				@media (max-width: 578px) {
+					margin-left: 0;
+				}
+				span {
+					font-weight: normal;
+					font-size: 20px;
+				}
+			}
+		}
+
+		img {
+			height: 100%;
+			width: 100%;
+		}
+
+		h5 {
+			color: black;
+			font-weight: bolder;
+			margin-left: 15px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			text-decoration: underline;
+		}
+
+		p {
+			margin: 15px;
+			margin-top: 0;
+			color: black;
+			font-style: italic;
+		}
+	}
+
+	i {
+		position: absolute;
+		top: 32px;
+		right: 22px;
+		font-size: 22px;
+		color: #96BB7C;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	h3 {
+		color: black;
+		font-weight: bold;
+	}
+
+	hr {
+		margin: 0;
+		margin-bottom: 1rem;
+		border: none;
+		background: #96bb7c;
+		padding: 1px;
+	}
+}

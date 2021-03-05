@@ -1,1 +1,29 @@
-<p>project-detail works!</p>
+<div class="project-detail-modal">
+	<i (click)="closeModal()" class="fa fa-times" aria-hidden="true"></i>
+	<h3>Project Detail</h3>
+	<hr/>
+	<div class="intro row">
+		<div class="col-lg-4 image">
+			<img [src]="project.image"/>
+		</div>
+		<div class="col-lg-8">
+			<ul>
+				<li>Name: <span>{{project.name}}</span></li>
+				<li>Link: <span><a [href]="project.link" target="_blank">{{project.link}}</a></span></li>
+				<li>Github: <span><a [href]="project.github" target="_blank">{{project.github}}</a></span></li>
+				<li>Status: <span>{{project.status}}</span></li>
+			</ul>
+		</div>
+		<div class="row col-lg-12">
+			<h5>Description</h5>
+			<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+				industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+				scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+				into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+				release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+				software like Aldus PageMaker including versions of Lorem Ipsum.
+			</p>
+		</div>
+	</div>
+</div>
