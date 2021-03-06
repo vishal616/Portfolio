@@ -1,15 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-education',
-  templateUrl: './education.component.html',
-  styleUrls: ['./education.component.scss']
+	selector: 'app-education',
+	templateUrl: './education.component.html',
+	styleUrls: ['./education.component.scss']
 })
 export class EducationComponent implements OnInit {
 
-  constructor() { }
+	@Input() education: Education;
 
-  ngOnInit(): void {
-  }
+	constructor() {
+	}
 
+	ngOnInit(): void {
+	}
+
+}
+
+export interface Education {
+	degree: string;
+	from: string;
+	to: string;
+	university: string;
 }

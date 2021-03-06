@@ -12,6 +12,12 @@
 					[job]="job"
 				></app-job>
 			</div>
+			<h3 class="education-title">Education</h3>
+			<div class="education-list" *ngFor="let education of educationList">
+				<app-education
+					[education]="education"
+				></app-education>
+			</div>
 		</div>
 	</div>
 </div>

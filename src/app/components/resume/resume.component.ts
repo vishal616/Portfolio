@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Job} from '../job/job.component';
+import {Education} from '../education/education.component';
 
 @Component({
 	selector: 'app-resume',
@@ -9,6 +10,7 @@ import {Job} from '../job/job.component';
 export class ResumeComponent implements OnInit {
 
 	jobList: Job[];
+	educationList: Education[];
 
 	constructor() {
 		this.jobList = [
@@ -28,7 +30,21 @@ export class ResumeComponent implements OnInit {
 				title: 'Software Engineer',
 				type: 'INTERN'
 			}
-		]
+		];
+		this.educationList = [
+			{
+				degree: 'Master (Hons.) in Chemistry',
+				from: 'August 2014',
+				to: 'June 2019',
+				university: 'BITS Pilani'
+			},
+			{
+				degree: 'Bachelors (Hons.) in Chemical',
+				from: 'August 2014',
+				to: 'June 2019',
+				university: 'BITS Pilani'
+			}
+		];
 	}
 
 	ngOnInit(): void {
