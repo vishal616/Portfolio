@@ -14,6 +14,8 @@ import {ProjectDetailComponent} from './components/project-detail/project-detail
 import { ResumeComponent } from './components/resume/resume.component';
 import { JobComponent } from './components/job/job.component';
 import { EducationComponent } from './components/education/education.component';
+import { ContactComponent } from './components/contact/contact.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
 	declarations: [
@@ -28,11 +30,13 @@ import { EducationComponent } from './components/education/education.component';
 		ProjectDetailComponent,
 		ResumeComponent,
 		JobComponent,
-		EducationComponent
+		EducationComponent,
+		ContactComponent
 	],
 	imports: [
 		BrowserModule,
-		NgbModule
+		NgbModule,
+		ReactiveFormsModule
 	],
 	providers: [NgbActiveModal],
 	bootstrap: [AppComponent],
