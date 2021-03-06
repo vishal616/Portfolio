@@ -2,17 +2,16 @@
 
 	width: 15rem;
 	height: 15rem;
-	margin: 20px;
 	transition: 0.5s;
 	position: relative;
+	border: 1px solid #96bb7c;
+	border-radius: 3px;
 
-	//.type {
-	//	position: absolute;
-	//	color: #96bb7c;
-	//	opacity: 1;
-	//	z-index: 100;
-	//}
 	.img-overlay {
+		display: none;
+	}
+
+	.img-text {
 		display: none;
 	}
 
@@ -37,6 +36,24 @@
 			align-items: center;
 			font-size: 1.75rem;
 			flex-direction: column;
+		}
+
+		.img-text {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			font-size: 1.75rem;
+			font-weight: bold;
+
+			.type {
+				font-size: 15px;
+				color: #96bb7c;
+				font-weight: bold;
+			}
 		}
 	}
 
