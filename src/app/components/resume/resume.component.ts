@@ -33,7 +33,7 @@ export class ResumeComponent implements OnInit {
 		];
 		this.educationList = [
 			{
-				degree: 'Master (Hons.) in Chemistry',
+				degree: 'Masters (Hons.) in Chemistry',
 				from: 'August 2014',
 				to: 'June 2019',
 				university: 'BITS Pilani'
