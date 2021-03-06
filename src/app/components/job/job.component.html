@@ -1,1 +1,19 @@
-<p>job works!</p>
+<div class="job-container">
+	<div class="intro">
+		<div class="title">{{job.title}}</div>
+		<div class="type">{{job.type}}</div>
+	</div>
+	<div class="additional-info">
+		<div>
+			<i class="fa fa-building"></i>
+			<span>{{job.company}}</span>
+			<i class="fa fa-map-marker"></i>
+			<span>{{job.location}}</span>
+		</div>
+		<div>
+			<i class="fa fa-calendar"></i>
+			<span>{{job.from}} - {{job.to}}</span>
+		</div>
+	</div>
+	<hr/>
+</div>

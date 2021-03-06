@@ -7,6 +7,11 @@
 		<div class="col-lg-1"></div>
 		<div class="col-lg-7">
 			<h3>Work Experience</h3>
+			<div class="job-list" *ngFor="let job of jobList">
+				<app-job
+					[job]="job"
+				></app-job>
+			</div>
 		</div>
 	</div>
 </div>
