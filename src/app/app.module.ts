@@ -13,6 +13,7 @@ import {ServicesComponent} from './components/services/services.component';
 import {ProjectDetailComponent} from './components/project-detail/project-detail.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { JobComponent } from './components/job/job.component';
+import { EducationComponent } from './components/education/education.component';
 
 @NgModule({
 	declarations: [
@@ -26,7 +27,8 @@ import { JobComponent } from './components/job/job.component';
 		ServicesComponent,
 		ProjectDetailComponent,
 		ResumeComponent,
-		JobComponent
+		JobComponent,
+		EducationComponent
 	],
 	imports: [
 		BrowserModule,
