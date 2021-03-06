@@ -1,7 +1,63 @@
 .contact-container {
+	padding-left: 7rem;
+	padding-right: 7rem;
+
+	@media (max-width: 550px) {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.btn {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 30px;
+		padding-right: 30px;
+		border-radius: 30px;
+		font-size: 11px;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: .05rem;
+		background-color: #96bb7c;
+		border: none;
+		margin-right: 2.5px;
+	}
+
+	.btn.btn-primary:hover {
+		border-color: #a1c289;
+		background: #a1c289;
+	}
 
 	input {
 		border: none;
 		border-bottom: 1px solid;
+		width: 100%;
+		font-size: 16px;
+		padding-bottom: 10px;
+		&:focus {
+			outline: none;
+			border-bottom: 1px solid #96bb7c;
+		}
+	}
+
+	textarea {
+		border: none;
+		border-bottom: 1px solid;
+		width: 100%;
+		font-size: 16px;
+		padding-bottom: 10px;
+		&:focus {
+			outline: none;
+			border-bottom: 1px solid #96bb7c;
+		}
+	}
+
+	h1 {
+		color: black;
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	label {
+		margin-bottom: 20px;
 	}
 }

@@ -1,21 +1,43 @@
 <div class="contact-container">
-	<form [formGroup]="contactForm">
-		<label>First name</label>
-		<div class="form-group">
-			<input pattern="[a-zA-Z]+" formControlName="firstName"/>
+	<h1>Contact Me</h1>
+	<div class="row">
+		<div class="col-lg-7">
+			<form [formGroup]="contactForm">
+				<div class="row">
+					<div class="form-group col-lg-6 ">
+						<label>First name</label>
+						<div>
+							<input pattern="[a-zA-Z]+" formControlName="firstName"/>
+						</div>
+					</div>
+					<div class="form-group col-lg-6 ">
+						<label>Second name</label>
+						<div>
+							<input type="text" formControlName="lastName"/>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-lg-12">
+						<label>Email</label>
+						<div>
+							<input type="email" formControlName="email"/>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-lg-12">
+						<label>Message</label>
+						<div>
+							<textarea rows="4" type="text" formControlName="message"></textarea>
+						</div>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary" (click)="submit()">SEND MESSAGE</button>
+			</form>
 		</div>
-		<div class="form-group">
-			<label>Second name</label>
-			<input type="text" formControlName="lastName"/>
+		<div class="col-lg-4">
+			<h1>TEST</h1>
 		</div>
-		<div class="form-group">
-			<label>Email</label>
-			<input type="email" formControlName="email"/>
-		</div>
-		<div class="form-group">
-			<label>Message</label>
-			<textarea type="text" formControlName="message"></textarea>
-		</div>
-		<button type="submit" class="btn btn-primary" (click)="submit()">Submit</button>
-	</form>
+	</div>
 </div>
