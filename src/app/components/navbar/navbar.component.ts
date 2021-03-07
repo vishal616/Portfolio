@@ -27,8 +27,4 @@ export class NavbarComponent implements OnInit {
 		}
 	}
 
-	clickedMenuItem(event) {
-		event.stopPropagation();
-	}
-
 }
