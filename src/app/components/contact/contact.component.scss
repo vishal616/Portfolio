@@ -1,6 +1,7 @@
 .contact-container {
 	padding-left: 7rem;
 	padding-right: 7rem;
+	padding-bottom: 10rem;
 
 	@media (max-width: 550px) {
 		padding-left: 1rem;
@@ -25,6 +26,17 @@
 	.btn.btn-primary:hover {
 		border-color: #a1c289;
 		background: #a1c289;
+	}
+
+	.ending {
+		text-align: center;
+		margin-top: 100px;
+		color: black;
+		font-size: 25px;
+		font-weight: bolder;
+		i {
+			color: red;
+		}
 	}
 
 	input {
@@ -57,7 +69,44 @@
 		margin-bottom: 60px;
 	}
 
+	h4 {
+		color: black;
+		text-align: center;
+		@media (max-width: 550px) {
+			text-align: start;
+			margin-top: 40px;
+		}
+	}
+
 	label {
 		margin-bottom: 20px;
+	}
+
+	ul {
+		list-style: none;
+		margin-top: 40px;
+		padding: 0;
+
+		@media (max-width: 550px) {
+			margin-top: 20px;
+		}
+
+		li {
+			color: #96bb7c;
+			margin: 20px;
+			white-space: nowrap;
+
+			@media (max-width: 550px) {
+				margin-left: 0;
+			}
+
+			a {
+				color: #96bb7c;
+			}
+
+			i {
+				font-size: 18px;
+			}
+		}
 	}
 }
