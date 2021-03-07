@@ -8,6 +8,11 @@
 			height: 15rem;
 		}
 
+		.description{
+			display: flex;
+			flex-direction: column;
+		}
+
 		ul {
 			list-style: none;
 			padding: 0;

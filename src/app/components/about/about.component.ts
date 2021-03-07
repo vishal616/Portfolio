@@ -12,10 +12,11 @@ export class AboutComponent implements OnInit {
 	constructor() {
 		this.skillsList = [
 			{name: 'React', level: 90},
-			{name: 'Angular', level: 80},
-			{name: 'Spring Boot', level: 60},
+			{name: 'Angular', level: 90},
 			{name: 'HTML & CSS', level: 90},
-			{name: 'JAVA', level: 75},
+			{name: 'JAVA', level: 85},
+			{name: 'Spring Boot', level: 75},
+			{name: 'Node/Express', level: 75}
 		];
 	}
 

@@ -12,36 +12,15 @@ export class PortfolioComponent implements OnInit {
 
 	constructor() {
 		this.projectList = [{
-			name: 'Website',
-			image: '../../../assets/projects/project-1.jpg',
-			type: 'Front-end',
-			status: 'Completed',
-			github: 'https://github.com/vishal616',
-			briefInfo: 'helps you find stock photos',
-			link: 'https://www.pexels.com/',
-			techStack: ['Angular', 'Java', 'MongoDb']
-		},
-			{
-				name: 'Website',
-				image: '../../../assets/projects/project-1.jpg',
-				type: 'Front-end',
-				briefInfo: 'helps you find stock photos',
-				link: 'https://www.pexels.com/'
-			},
-			{
-				name: 'Website',
-				image: '../../../assets/projects/project-1.jpg',
-				type: 'Front-end',
-				briefInfo: 'helps you find stock photos',
-				link: 'https://www.pexels.com/'
-			},
-			{
-				name: 'Website',
-				image: '../../../assets/projects/project-1.jpg',
-				type: 'Front-end',
-				briefInfo: 'helps you find stock photos',
-				link: 'https://www.pexels.com/'
-			}];
+			name: 'Portfolio Website',
+			image: '../../../assets/projects/portfolio.PNG',
+			type: 'FrontEnd',
+			status: 'In Progress',
+			github: 'https://github.com/vishal616/Portfolio',
+			briefInfo: 'This is my personal portfolio where i will be showing my own side projects',
+			link: 'https://www.vishmish.in/',
+			techStack: ['Angular', 'Node.js']
+		}];
 	}
 
 	ngOnInit(): void {
