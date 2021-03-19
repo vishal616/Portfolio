@@ -11,11 +11,14 @@ import {ProjectComponent} from './components/project/project.component';
 import {PortfolioComponent} from './components/portfolio/portfolio.component';
 import {ServicesComponent} from './components/services/services.component';
 import {ProjectDetailComponent} from './components/project-detail/project-detail.component';
-import { ResumeComponent } from './components/resume/resume.component';
-import { JobComponent } from './components/job/job.component';
-import { EducationComponent } from './components/education/education.component';
-import { ContactComponent } from './components/contact/contact.component';
+import {ResumeComponent} from './components/resume/resume.component';
+import {JobComponent} from './components/job/job.component';
+import {EducationComponent} from './components/education/education.component';
+import {ContactComponent} from './components/contact/contact.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {ToastrModule} from 'ngx-toastr';
 
 @NgModule({
 	declarations: [
@@ -31,16 +34,18 @@ import {ReactiveFormsModule} from '@angular/forms';
 		ResumeComponent,
 		JobComponent,
 		EducationComponent,
-		ContactComponent
+		ContactComponent,
 	],
 	imports: [
 		BrowserModule,
 		NgbModule,
-		ReactiveFormsModule
+		ReactiveFormsModule,
+		HttpClientModule,
+		BrowserAnimationsModule,
+		ToastrModule.forRoot()
 	],
 	providers: [NgbActiveModal],
 	bootstrap: [AppComponent],
-	// entryComponents
 })
 export class AppModule {
 }
