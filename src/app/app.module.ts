@@ -19,6 +19,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ToastrModule} from 'ngx-toastr';
+import {NgxUiLoaderModule} from 'ngx-ui-loader';
 
 @NgModule({
 	declarations: [
@@ -42,7 +43,8 @@ import {ToastrModule} from 'ngx-toastr';
 		ReactiveFormsModule,
 		HttpClientModule,
 		BrowserAnimationsModule,
-		ToastrModule.forRoot()
+		ToastrModule.forRoot(),
+		NgxUiLoaderModule
 	],
 	providers: [NgbActiveModal],
 	bootstrap: [AppComponent],

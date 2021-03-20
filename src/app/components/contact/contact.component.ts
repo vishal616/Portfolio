@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {EmailService} from '../../services/email.service';
 import {ToastrService} from 'ngx-toastr';
+import {NgxUiLoaderService} from 'ngx-ui-loader';
 
 @Component({
 	selector: 'app-contact',
@@ -14,6 +15,7 @@ export class ContactComponent implements OnInit {
 
 	constructor(private formBuilder: FormBuilder,
 				private emailService: EmailService,
+				private spinnerService: NgxUiLoaderService,
 				private toastrService: ToastrService) {
 		this.contactForm = this.formBuilder.group({
 			firstName: [null, [Validators.required, Validators.maxLength(15)]],
@@ -33,12 +35,16 @@ export class ContactComponent implements OnInit {
 			return;
 		}
 
-		this.emailService.sendEmail(this.contactForm.value).subscribe((response) => {
-			this.toastrService.success('Email sent successfully', 'Success!');
-			this.contactForm.reset();
-		}, (error) => {
-			this.toastrService.error('Error in sending email', 'Error!');
-		});
+		this.spinnerService.start();
+		this.emailService.sendEmail(this.contactForm.value)
+			.subscribe(() => {
+				this.spinnerService.stop();
+				this.contactForm.reset();
+				this.toastrService.success('Email sent successfully', 'Success!');
+			}, (error) => {
+				this.spinnerService.stop();
+				this.toastrService.error('Error in sending email', 'Error!');
+			});
 
 	}
 
