@@ -1,6 +1,10 @@
 .service-container {
 	margin-top: 70px;
+	padding-top: 80px;
 	margin-bottom: 70px;
+	@media (max-width: 990px) {
+		padding: 1rem;
+	}
 	.service-list {
 		padding: 4rem;
 		padding-top: 3rem;

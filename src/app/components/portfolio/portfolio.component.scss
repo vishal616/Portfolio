@@ -1,6 +1,10 @@
 .portfolio-container {
 	margin-top: 70px;
+	padding-top: 80px;
 	margin-bottom: 70px;
+	@media (max-width: 990px) {
+		padding: 1rem;
+	}
 	.project-list {
 		width: 100%;
 		height: auto;
