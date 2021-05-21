@@ -2,8 +2,9 @@
 	<h1>My Portfolio</h1>
 	<div class="category-list">
 		<ul>
-			<li *ngFor="let category of categoriesList"
-				(click)="filterProjects(category.value)">{{category.label}}</li>
+			<li *ngFor="let category of categoriesList; let i = index"
+				[class.active]="selectedIndex === i"
+				(click)="filterProjects(category.value, i)">{{category.label}}</li>
 		</ul>
 	</div>
 	<div class="project-list">
