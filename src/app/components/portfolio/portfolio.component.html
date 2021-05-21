@@ -1,5 +1,11 @@
 <div id="portfolio" class="portfolio-container">
 	<h1>My Portfolio</h1>
+	<div class="category-list">
+		<ul>
+			<li *ngFor="let category of categoriesList"
+				(click)="filterProjects(category.value)">{{category.label}}</li>
+		</ul>
+	</div>
 	<div class="project-list">
 		<div *ngFor="let project of projectList">
 			<app-project

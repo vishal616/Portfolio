@@ -1,8 +1,8 @@
 .about-container {
 	margin-bottom: 70px;
 	padding: 6rem;
-	padding-left: 10rem;
-	padding-right: 10rem;
+	padding-left: 7rem;
+	padding-right: 7rem;
 	@media (max-width: 990px) {
 		padding: 1rem;
 	}
@@ -31,6 +31,7 @@
 
 	.bio {
 		padding: 80px;
+		padding-right: 30px;
 
 		@media (max-width: 990px) {
 			margin-top: 10px;

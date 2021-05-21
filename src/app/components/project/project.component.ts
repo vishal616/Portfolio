@@ -19,7 +19,6 @@ export class ProjectComponent implements OnInit {
 	}
 
 	openProjectModal() {
-		console.log('executing')
 		const modalRef = this.modalService.open(ProjectDetailComponent, {
 			keyboard: false,
 			size: 'lg'
@@ -38,4 +37,5 @@ export interface Project {
 	github?: string;
 	status?: string;
 	techStack?: string[];
+	categories: string[];
 }

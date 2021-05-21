@@ -1,4 +1,4 @@
-<div (click)="openProjectModal()" class="project-container">
+<div *ngIf="project" (click)="openProjectModal()" class="project-container">
 	<img [src]="project.image"/>
 	<div class="img-overlay"></div>
 	<div class="img-text">

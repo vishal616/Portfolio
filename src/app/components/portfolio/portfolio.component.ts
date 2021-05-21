@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Project} from '../project/project.component';
+import {CATEGORIES_LIST, CATEGORY} from '../helpers/categories';
+import {PROJECTS_LIST} from '../helpers/projectHelper';
 
 @Component({
 	selector: 'app-portfolio',
@@ -9,21 +11,26 @@ import {Project} from '../project/project.component';
 export class PortfolioComponent implements OnInit {
 
 	projectList: Project[];
+	categoriesList: {label: string, value: string}[];
 
 	constructor() {
-		this.projectList = [{
-			name: 'Portfolio Website',
-			image: '../../../assets/projects/portfolio.PNG',
-			type: 'FrontEnd',
-			status: 'In Progress',
-			github: 'https://github.com/vishal616/Portfolio',
-			briefInfo: 'This is my personal portfolio where i will be showing my own side projects',
-			link: 'https://www.vishmish.in/',
-			techStack: ['Angular', 'Node.js']
-		}];
+		this.projectList = PROJECTS_LIST;
+		this.categoriesList = CATEGORIES_LIST;
 	}
 
 	ngOnInit(): void {
+	}
+
+	filterProjects(category: string) {
+		if (category === 'all') {
+			this.projectList = PROJECTS_LIST;
+			return;
+		}
+		this.projectList = PROJECTS_LIST.map((project: Project) => {
+			if (project && project.categories.includes(category)) {
+				return project;
+			}
+		});
 	}
 
 }
